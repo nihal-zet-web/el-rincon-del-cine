@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header id="header-container">
+            <h1>El Rincón del Cine</h1> 
+        </header>
+        <nav id="nav-container">
+            <ul id="ul-container">
+                <li class="navBar-element"><a href="index.php">Inicio</a></li>
+                <li class="navBar-element-non-clickable">Registro</li>
+                <li class="navBar-element"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main id="main-container">
+            
+            <form id="register-form" action="register.php" method="post">
+                <div id="form-data">
+                    <fieldset >
+                        <legend><h2>Registrarse</h2></legend>
+                        <label for="username">Nombre de usuario</label><br>
+                        <input id="username" type="text" name="username" value="" required><br><br>
+                        <div id="error-username"></div>
+                        <label  for="email">Email</label><br>
+                        <input id="email" type="email" name="email" value="" required><br><br>
+                        <div id="error-email"></div> 
+                        <label  for="password">Contraseña</label><br>
+                        <input id="password" type="text" name="password" value="" minlength="6" required><br><br><br>
+                        <div id="error-password"></div>
+                        <input type="submit" value="Aceptar">
+                    </fieldset>
+                    
+                    </div>
+            </form>
+        </main>
+         <footer id="footer-container">
+            <p>El Rincon del Cine Copyright &copy; 2026</p>      
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

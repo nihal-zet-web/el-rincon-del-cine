@@ -1,0 +1,20 @@
+
+When connecting to the database (conectar_db.php)
+When executing queries (INSERT, SELECT, UPDATE, DELETE)
+Any time you use $pdo->prepare() or $stmt->execute()
+
+For database operations:
+Catch PDOException specifically (not generic Exception)
+For general errors:
+Catch Exception as a fallback
+
+catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();  // Show error for debugging
+}
+
+catch (PDOException $e) {
+    error_log($e->getMessage());  // Log to file, don't show user
+    echo "Something went wrong. Please try again.";  // Generic message
+}
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
