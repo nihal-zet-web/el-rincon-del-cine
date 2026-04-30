@@ -1,0 +1,466 @@
+/*Me he inspirado en los blogs de los 2000s para hacer el diseño así que he intentado que parezca de esa época*/
+
+/*PARA TODAS LAS PÁGINAS*/
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+#ul-container {
+    border: solid black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 2px;
+}
+
+.navBar-element-non-clickable {
+    background-color: #8B0000;
+    border: 1px solid black;
+    padding-right: 30px;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    font-size: large;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+.navBar-element {
+    background-color: #8B0000;
+    border: 1px solid black;
+    padding-right: 30px;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    font-size: large;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+.navBar-element:hover{
+    background-color: rgb(134, 41, 41);
+}
+
+#navBar-dropdown select {
+    background: transparent;
+    appearance: none;
+    border: none;
+    font-size: large;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+#navBar-dropdown:hover {
+    background-color: rgb(134, 41, 41);
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #DCDDDF;
+}
+
+header {
+    padding: 10px;
+    height: 150px;
+    background-color: #8B0000;   
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: 'Impact', 'Lucida Sans', 'Arial', 'sans-serif';
+    font-size: 80px;
+    width: 100%;
+    text-align: left;
+    text-shadow: 2px 2px 0px white;
+}
+
+main {
+    padding: 10px;
+    background-color: #aeb2b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;    
+}
+
+#footer-container {
+    background-color: #8B0000;
+    height: 50px;
+    padding: 10px;
+}
+
+
+/*PARA LA PÁGINA DE index.php*/
+#posts-container {
+    max-width: 700px;
+    background-color: #DCDDDF;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    border: solid black;
+}
+
+.post-content {
+    background-color: #c8cdd6;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.post-content a {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    height: 40px;
+    background-color: #8B0000;
+    font-size: 35px;   
+}
+
+.post-title:hover {
+    background-color: rgb(134, 41, 41);
+    color: white;
+}
+
+.image-container {
+    background-color: #DCDDDF;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid black;    
+}
+
+.post-image {
+    max-width: 600px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.post-date {
+    color: rgb(10, 10, 10);
+    background-color: #8B0000;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+
+/*PARA LA PÁGINA DE registro.html*/
+
+#register-form {
+    height: 500px;
+    width: 400px; 
+    background-color: #8B0000;
+    padding: 3px;  
+    border: solid black;    
+}
+
+#form-data {
+    max-width: 100%;
+    height: 475px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: #d4d5d6;
+}
+
+fieldset {
+    height: 413px;
+    border: 1px solid black;
+    background-color: #aeb2b9;
+    padding: 20px;
+    margin: 7px;
+    font-size: 22px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    color: white;   
+    text-shadow: 2px 2px 0px black; 
+}
+
+label {
+    color: rgb(255, 249, 249);
+    font-size: 19px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';    
+}
+
+fieldset input[type='text'], input[type='email'] {
+    width: 97%;
+    height: 20px;
+    padding: 4px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';    
+}
+
+fieldset input[type='submit'] {
+    border: 1px solid black;
+    background-color: #8B0000;
+    height: 25px;
+    width: 100%;
+}
+
+fieldset input[type='submit']:hover {
+    background-color: rgb(134, 41, 41);
+}
+
+
+/*PARA LA PÁGINA DE post.php*/
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-container {
+    max-width: 600px;
+    border: solid #000000;
+    background-color: #DCDDDF;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.small-border {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+#post-container h1 {
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background-color: #8B0000;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    font-size: 40px;
+    color: white;
+ 	text-shadow: 2px 2px 0px black;
+    width: 584px;
+}
+
+#post-box {   
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-box img {
+    max-width: 570px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.post-box-content {
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.post-box-content p {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    background-color: #9b9fa5;
+}
+
+.post-box-content p span{
+    font-weight: bold;
+}
+
+#spoiler {
+    font-size: 30px;
+    padding: 3px;
+    background-color: #8B0000;
+    margin-top: 20px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+#review-container {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#comments-container {
+    margin-top: 10px;
+    max-width: 600px;
+    border: solid #000000;
+    background-color: #DCDDDF;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif'; 
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.comment {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#comment-form label{
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px black;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';    
+    background-color: #9b9fa5;
+}
+
+#comment-form input[type='text'] {
+    width: 600px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#comment-form input[type='submit'] {
+    appearance: none;
+    width: 160px;
+    background-color: #8B0000;
+    margin-left: 20px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+#comment-form input[type='submit']:hover {
+    background-color: rgb(134, 41, 41);
+}
+
+#comment-section {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#comment-section h4 a:hover {
+    color: #8B0000;
+}
+
+
+/*PARA LA PÁGINA DE contacto.html*/
+#about-me-container {
+    max-width: 600px;
+    border: solid #000000;
+    background-color: #DCDDDF;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-container-1 {
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+.section-container-2 {
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 5px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+
+/*PARA LA PÁGINA DE comentarios_usuario.php*/
+#history-container {
+    max-width: 600px;
+    height: 320px;
+    border: solid #000000;
+    background-color: #DCDDDF;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#history-comment {
+    border: 2px solid black;
+    padding: 3px;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+#history-comment p a {
+    font-weight: bold;
+}
+
+#history-comment p a:hover {
+    color: #8B0000;
+}
+
+
+/*PARA DISPOSITIVOS MÁS PEQUEÑOS*/
+@media (max-width: 768px) {
+    #posts-container,
+    #post-container,
+    #comments-container,
+    #about-me-container,
+    #history-container {
+        max-width: 100%;
+        width: 95%;
+    }
+
+	#register-form {
+    max-width: 95%;
+    height: auto;
+    }
+    
+    .post-image,
+    #post-box img {
+        max-width: 100%;
+    }
+    
+    .post-title {
+        font-size: 25px;
+   		height: auto;
+        padding: 3px;
+    }
+    
+    #post-container h1 {
+        width: 97%;   
+    }
+    
+    #comment-form input[type='text'] {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    #ul-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;   
+    }
+    
+    #navBar-dropdown, .navBar-element, .navBar-element-non-clickable {
+        width: 50px;
+    }
+}

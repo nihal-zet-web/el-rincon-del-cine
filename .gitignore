@@ -1,0 +1,3 @@
+*.sql
+/post_image
+conectar_db.php
