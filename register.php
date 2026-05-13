@@ -19,7 +19,7 @@ if ($username && $email && $password) {
         }
         $insertDataQuery = "INSERT INTO users (username, email, user_password) VALUES (:username, :email, :password)";
         $insertDataStmt = $pdo->prepare($insertDataQuery);
-        $insertDataStmt->execute([":username" => $username, ":email" => $email, ":password" => password_hash($password)]);
+        $insertDataStmt->execute([":username" => $username, ":email" => $email, ":password" => password_hash($password, PASSWORD_DEFAULT)]);
         session_start();
         $_SESSION['username'] = $username;
         echo "success";
