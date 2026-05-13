@@ -2,7 +2,7 @@
 //Aquí se recibe la información mandada en el formulario de registro y se comprueba si el nombre de usuario
 //está en la base de datos, en caso de estario se avisa al usuario y sino se guarda la información en la base 
 //de datos
-require "conectar_db.php";
+require_once "conectar_db.php";
 $username = isset($_POST['username']) ? $_POST['username'] : null;
 $email = isset($_POST['email']) ? $_POST['email'] : null;
 $password = isset($_POST['password']) ? $_POST['password'] : null;
@@ -19,7 +19,7 @@ if ($username && $email && $password) {
         }
         $insertDataQuery = "INSERT INTO users (username, email, user_password) VALUES (:username, :email, :password)";
         $insertDataStmt = $pdo->prepare($insertDataQuery);
-        $insertDataStmt->execute([":username" => $username, ":email" => $email, ":password" => $password]);
+        $insertDataStmt->execute([":username" => $username, ":email" => $email, ":password" => password_hash($password)]);
         session_start();
         $_SESSION['username'] = $username;
         echo "success";
