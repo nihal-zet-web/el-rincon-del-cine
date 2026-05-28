@@ -19,6 +19,7 @@ ver los comentarios del usuario en que ha pulsado-->
                 <li class="navBar-element"><a href="index.php">Inicio</a></li>
                 <li class="navBar-element"><a href="registro.html">Registro</a></li>
                 <li class="navBar-element"><a href="contacto.html">Contacto</a></li>
+                <li class="navBar-element"><a href="login.html">Login</a></li>
             </ul>
         </nav>
         <main>

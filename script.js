@@ -45,6 +45,37 @@ $(document).ready(function() {
     });
 });
 
+//Iniciar sesión 
+$(document).ready(function() {
+    $("#login-form").on("submit", function (e) {
+        e.preventDefault();
+        var userUsername = $("#username").val();
+        var userPassword = $("#password").val();
+        if (userUsername !== "" && userPassword !== "") {
+            alert("Rellene todos los campos.");
+            return; 
+        }
+        
+        $.ajax({
+            url: "login.php",
+            method: "POST",
+            data: {
+                username: userUsername, 
+                password: userPassword
+            },
+            success: function(response) {  
+                if (response.trim() === "success") {
+                    alert("Bienvenido/a otra vez!")
+                    window.location.href = "index.php"; 
+                } else {
+                    alert(response);    
+                }
+            }
+        });
+    });
+});
+
+
 //Enviar un comentario
 $(document).ready(function() {
     $("#comment-form").on("submit", function(e) {
